@@ -104,7 +104,7 @@ firefox
 ⚠ Solo en termux 
 
 ```bash
-curl -sLf https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/boostrap.sh | bash
+curl -sLf https://raw.githubusercontent.com/ahmad1abbadi/termux-desktop-xfce/main/boostrap.sh | bash
 ```
 
 > luego de eso solo espere, el script hará su trabajo 
