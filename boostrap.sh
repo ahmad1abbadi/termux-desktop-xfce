@@ -25,7 +25,8 @@ apt update
 apt install -y xfce4 tigervnc xfce4-goodies termux-desktop-xfce breeze-cursor-theme kvantum ttf-microsoft-cascadia audacious leafpad pavucontrol-qt hexchat geany synaptic 
 apt install -y firefox
 echo "Downloading wallpapers and xstartup..."
-wget https://github.com/Yisus7u7/termux-desktop-lxqt/releases/download/data/termux_desktop_lxqt_data.tar.xz
+https://github.com/ahmad1abbadi/termux-desktop-xfce/releases/download/android/termux_desktop_lxqt_data.tar.xz
+cp termux_desktop_lxqt_data.tar.xz $PREFIX/glibc/opt/darkos
 tar -xvf termux_desktop_lxqt_data.tar.xz
 rm termux_desktop_lxqt_data.tar.xz
 rm .vnc/xstartup
