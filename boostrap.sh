@@ -1,10 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/env bash
 
-clear 
-
-#this script will configure a graphical user interface 
-#(xfce4) in termux
-#creator: @Yisus7u7v
+clear
 cd $HOME
 
 echo -e '\e[1;36m installing packages, it is necessary  \e[1m'
@@ -27,15 +23,7 @@ wget -P $PREFIX/etc/apt/sources.list.d https://raw.githubusercontent.com/Yisus7u
 apt install -y x11-repo 
 apt update
 apt install -y xfce4 tigervnc xfce4-goodies termux-desktop-xfce breeze-cursor-theme kvantum ttf-microsoft-cascadia audacious leafpad pavucontrol-qt hexchat geany synaptic 
-apt install -y firefox
-
-echo "boostrap data..."
-rm -rf $HOME/.backup
-mkdir $HOME/.backup
-mv $HOME/.config $HOME/.backup
-mv $HOME/.vnc $HOME/.backup
-cd $HOME
-
+apt install -y firefox vlc
 echo "Downloading wallpapers and xstartup..."
 wget https://github.com/Yisus7u7/termux-desktop-lxqt/releases/download/data/termux_desktop_lxqt_data.tar.xz
 tar -xvf termux_desktop_lxqt_data.tar.xz
@@ -57,11 +45,9 @@ mkdir $HOME/Videos
 termux-setup-storage
 
 ln -s $HOME/storage/music Music 
+ln -s $HOME/storage/download DOWNLOAD
 
 cd $HOME/Desktop
-wget https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/welcome/LEAME.txt
-wget https://raw.githubusercontent.com/Yisus7u7/termux-desktop-xfce/main/welcome/README.txt
-rm LEAME.txt README.txt
 cd $HOME
 
 mv $PREFIX/share/kvantum/* $PREFIX/share/Kvantum
