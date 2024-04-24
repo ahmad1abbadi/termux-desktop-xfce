@@ -45,13 +45,13 @@ mkdir $HOME/Videos
 termux-setup-storage
 
 ln -s $HOME/storage/music Music 
-ln -s $HOME/storage/download DOWNLOAD
+ln -s $HOME/storage/Download Downloads
 
 cd $HOME/Desktop
 cd $HOME
 
 mv $PREFIX/share/kvantum/* $PREFIX/share/Kvantum
-
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s $HOME/Pictures/wallpapers/wallpaper35.jpg
 echo -e """\e[1;32menjoy!!
 To start the vnc server, use the command: vncserver to stop it, use the command: vncserver -kill: 1 Replace the: 1 with the port on which the vnc service is running\e[1m"""
 
