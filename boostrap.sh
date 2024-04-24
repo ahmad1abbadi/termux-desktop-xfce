@@ -51,7 +51,7 @@ cd $HOME/Desktop
 cd $HOME
 
 mv $PREFIX/share/kvantum/* $PREFIX/share/Kvantum
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s $HOME/Pictures/wallpapers/wallpaper35.jpg
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorscreen/workspace0/last-image -n -t string -s '/data/data/com.termux/files/home/Pictures/wallpaper/wallpaper35.jpg'
 echo -e """\e[1;32menjoy!!
 To start the vnc server, use the command: vncserver to stop it, use the command: vncserver -kill: 1 Replace the: 1 with the port on which the vnc service is running\e[1m"""
 
