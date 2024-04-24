@@ -23,7 +23,7 @@ wget -P $PREFIX/etc/apt/sources.list.d https://raw.githubusercontent.com/Yisus7u
 apt install -y x11-repo 
 apt update
 apt install -y xfce4 tigervnc xfce4-goodies termux-desktop-xfce breeze-cursor-theme kvantum ttf-microsoft-cascadia audacious leafpad pavucontrol-qt hexchat geany synaptic 
-apt install -y firefox vlc
+apt install -y firefox
 echo "Downloading wallpapers and xstartup..."
 wget https://github.com/Yisus7u7/termux-desktop-lxqt/releases/download/data/termux_desktop_lxqt_data.tar.xz
 tar -xvf termux_desktop_lxqt_data.tar.xz
